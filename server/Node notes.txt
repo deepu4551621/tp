@@ -1,0 +1,24 @@
+// #1
+setTimeout:  setTimeout(callbackFunction, delay);
+// callbackFunction: A function to be executed after the delay.
+// delay: The time (in milliseconds) to wait before executing the function.
+// function is used to execute a function or evaluate an expression after a specified delay (in milliseconds).
+setTimeout(() => {
+    console.log('Delayed message after 3 seconds');
+  }, 3000);
+
+// #2
+setInterval:  setInterval(callbackFunction, interval);
+// function is used to repeatedly execute a function or evaluate an expression at specified intervals.
+
+// #3
+// Example module exporting a function
+function myFunction() {
+    // function implementation
+  }
+  module.exports = myFunction;
+
+  const myModule = require('./myModule');
+  
+  //express notes
+  
