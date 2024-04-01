@@ -13,7 +13,4 @@ router.use(cors({
 router.get('/',verifyToken)
 router.post('/signup', Register)
 router.post('/login',generateToken, loginUser)
-router.get('/api', (req,res)=>{
-res.json({message:"backend server is running"})
-})
 module.exports=router;
