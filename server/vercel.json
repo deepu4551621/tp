@@ -1,13 +1,5 @@
 {
-  "routes": [
-    { "src": "/api/(.*)", "dest": "server.js" },
-    { "handle": "filesystem" },
-    { "src": "/(.*)", "dest": "/index.html" }
-  ],
   "rewrites": [
-    { "source": "/api/(.*)", "destination": "/server.js" }
-  ],
-  "headers": [
-    { "source": "/(.*)", "headers": [{ "key": "Access-Control-Allow-Origin", "value": "*" }] }
+    { "source": "/api/(.*)", "destination": "server.js" }
   ]
 }
