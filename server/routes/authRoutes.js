@@ -13,5 +13,7 @@ router.use(cors({
 router.get('/',verifyToken)
 router.post('/signup', Register)
 router.post('/login',generateToken, loginUser)
-// router.get('/profile', getProfile)
+router.get('https://travelplanner-indol.vercel.app', (req,res)=>{
+res.json({message:"backend server is running"})
+})
 module.exports=router;
